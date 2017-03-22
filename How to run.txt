@@ -1,0 +1,9 @@
+Note:
+Make sure all the downloaded files from git are inside folder named "working"
+
+Open terminal
+Enter the following commands:
+cd 
+mkdir working
+sh script.sh
+sh tuning_script.sh

@@ -1,16 +1,10 @@
 This is a git repo
 
-My notes:
-
 If you are stuck in vim 
 Enter "Ctrl + X"
+
 
 To commit:
 git commit --amend
 
-To pull:
-git pull origin master
-
-To push:
-git push
 
