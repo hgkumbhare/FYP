@@ -1,0 +1,3 @@
+It is obligatory that each rental car is owned by exactly one branch
+It is obligatory that each rental has at most three additional drivers
+It is obligatory that a car must be assigned to a rental before the pick-up date of the rental

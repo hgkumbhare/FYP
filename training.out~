@@ -1,0 +1,4 @@
+Using SCRIPTS_ROOTDIR: /home/hgkumbhare/mosesdecoder/scripts
+Using single-thread GIZA
+using gzip 
+ERROR: use --f to specify foreign language at /home/hgkumbhare/mosesdecoder/scripts/training/train-model.perl line 524.
