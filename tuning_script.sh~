@@ -24,17 +24,44 @@ nohup nice ~/mosesdecoder/scripts/training/mert-moses.pl ~/corpus/se_file_tuning
 echo "TUNING SCRIPT RAN SUCCESSFULLY"
 
 
-
-
+# To speed up process by making binarised model
 
 mkdir ~/working/binarised-model
 cd ~/working
-~/mosesdecoder/bin/processPhraseTableMin \
--in train/model/phrase-table.gz -nscores 4 \
--out binarised-model/phrase-table
-~/mosesdecoder/bin/processLexicalTableMin \
--in train/model/reordering-table.wbe-msd-bidirectional-fe.gz \
--out binarised-model/reordering-table
+pwd
+~/mosesdecoder/bin/processPhraseTableMin -in train/model/phrase-table.gz -nscores 4 -out binarised-model/phrase-table
+~/mosesdecoder/bin/processLexicalTableMin -in train/model/reordering-table.wbe-msd-bidirectional-fe.gz -out binarised-model/reordering-table
+
+cp ~/working/mert-work/moses.ini ~/working/binarised-model/
+
+# Running moses on input file
+
+~/mosesdecoder/bin/moses -f ~/working/train/model/moses.ini < input_file.txt > output_file.txt
+
+#Running moses on input file using binarised model
+
+: ' Comments
+ For running binarised-model of moses:
+Then make a copy of the ~/working/mert-work/moses.ini in the binarised-model directory
+and change the phrase and reordering tables to point to the binarised versions, as follows:
+1. Change PhraseDictionaryMemory to PhraseDictionaryCompact
+2. Set the path of the PhraseDictionary feature to point to $HOME/working/binarised-model/phrase-table
+3. Set the path of the LexicalReordering feature to point to $HOME/working/binarised-model/reordering-table
+
+Run on terminal:
+~/mosesdecoder/bin/moses -f ~/working/binarised-model/moses.ini
+'
+
+sed -i 's/PhraseDictionaryMemory/PhraseDictionaryCompact/g' ~/working/binarised-model/moses.ini
+
+sed -i 's/train\/model/binarised-model/g' ~/working/binarised-model/moses.ini
+
+sed -i 's/phrase-table.gz/phrase-table/g' 
+
+sed -i 's/reordering-table.wbe-msd-bidirectional-fe.gz/reordering-table/g' ~/working/binarised-model/moses.ini
 
 
-echo "BINARISED SUCCESSFULLY"
+~/mosesdecoder/bin/moses -f ~/working/binarised-model/moses.ini < input_file.txt > output_file_binarised.txt
+
+
+echo "BINARISED MODEL SUCCESSFULLY"

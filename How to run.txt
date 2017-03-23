@@ -1,5 +1,5 @@
 Note:
-Make sure all the downloaded files from git are inside folder named "working"
+Make sure all the downloaded files from git are inside folder named "working" in your home 
 
 Open terminal
 Enter the following commands:
@@ -7,3 +7,9 @@ cd
 mkdir working
 sh script.sh
 sh tuning_script.sh
+
+For output check the output_file in working directory for results.
+For errors check training.out
+
+
+

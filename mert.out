@@ -30,17 +30,17 @@ featlist: TranslationModel0=0.200000
 featlist: TranslationModel0=0.200000 
 featlist: TranslationModel0=0.200000 
 featlist: TranslationModel0=0.200000 
-run 1 start at Wed Mar 22 16:51:46 IST 2017
+run 1 start at Thu Mar 23 16:55:43 IST 2017
 Parsing --decoder-flags: ||
 Saving new config to: ./run1.moses.ini
 Saved: ./run1.moses.ini
 Normalizing lambdas: 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.500000 -1.000000 0.200000 0.200000 0.200000 0.200000 0.200000
-DECODER_CFG = -weight-overwrite 'WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 PhrasePenalty0= 0.043478 Distortion0= 0.065217 LM0= 0.108696'
-Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 PhrasePenalty0= 0.043478 Distortion0= 0.065217 LM0= 0.108696'  -n-best-list run1.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run1.out 
-Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 PhrasePenalty0= 0.043478 Distortion0= 0.065217 LM0= 0.108696'  -n-best-list run1.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run1.out
+DECODER_CFG = -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'
+Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'  -n-best-list run1.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run1.out 
+Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'  -n-best-list run1.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run1.out
 1-10.20.2 0.2 0.2 0.20.3 0.3 0.3 0.3 0.3 0.30.30.5(1) run decoder to produce n-best lists
 params = 
-decoder_config = -weight-overwrite 'WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 PhrasePenalty0= 0.043478 Distortion0= 0.065217 LM0= 0.108696'
+decoder_config = -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'
 Defined parameters (per moses.ini or switch):
 	config: filtered/moses.ini 
 	distortion-limit: 6 
@@ -50,7 +50,7 @@ Defined parameters (per moses.ini or switch):
 	mapping: 0 T 0 
 	n-best-list: run1.best100.out 100 distinct 
 	weight: UnknownWordPenalty0= 1 WordPenalty0= -1 PhrasePenalty0= 0.2 TranslationModel0= 0.2 0.2 0.2 0.2 LexicalReordering0= 0.3 0.3 0.3 0.3 0.3 0.3 Distortion0= 0.3 LM0= 0.5 
-	weight-overwrite: WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 PhrasePenalty0= 0.043478 Distortion0= 0.065217 LM0= 0.108696 
+	weight-overwrite: LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391 
 line=UnknownWordPenalty
 FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
 line=WordPenalty
@@ -78,7 +78,7 @@ Start loading text phrase table. Moses format : [0.001] seconds
 Reading /home/hgkumbhare/working/mert-work/filtered/phrase-table.0-0.1.1.gz
 ----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
 ****************************************************************************************************
-Created input-output object : [0.002] seconds
+Created input-output object : [0.001] seconds
 Translating: It is obligatory that each rental car is owned by exactly one branch 
 Line 0: Initialize search took 0.000 seconds total
 Line 0: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
@@ -90,20 +90,20 @@ Line 0: Translation took 0.009 seconds total
 Translating: It is obligatory that each rental has at most three additional drivers 
 Line 1: Initialize search took 0.000 seconds total
 Line 1: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
-Line 1: Search took 0.004 seconds
+Line 1: Search took 0.007 seconds
 BEST TRANSLATION: It|UNK|UNK|UNK is obligatory|UNK|UNK|UNK that|UNK|UNK|UNK each|UNK|UNK|UNK rental|UNK|UNK|UNK has|UNK|UNK|UNK at most|UNK|UNK|UNK three|UNK|UNK|UNK additional|UNK|UNK|UNK drivers|UNK|UNK|UNK [111111111111]  [total=-1003.767] core=(-1000.000,-12.000,12.000,-0.693,-0.693,-0.693,-0.693,-3.219,0.000,0.000,-3.219,0.000,0.000,0.000,-58.488)  
 Line 1: Decision rule took 0.000 seconds total
-Line 1: Additional reporting took 0.002 seconds total
-Line 1: Translation took 0.007 seconds total
+Line 1: Additional reporting took 0.003 seconds total
+Line 1: Translation took 0.011 seconds total
 Translating: It is obligatory that a car must be assigned to a rental before the pick-up date of the rental 
 Line 2: Initialize search took 0.000 seconds total
 Line 2: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
-Line 2: Search took 0.011 seconds
+Line 2: Search took 0.012 seconds
 BEST TRANSLATION: It|UNK|UNK|UNK is obligatory|UNK|UNK|UNK that|UNK|UNK|UNK a car|UNK|UNK|UNK must|UNK|UNK|UNK be assigned|UNK|UNK|UNK to|UNK|UNK|UNK a rental|UNK|UNK|UNK before|UNK|UNK|UNK point pick-up|UNK|UNK|UNK date|UNK|UNK|UNK than point rental|UNK|UNK|UNK [1111111111111111111]  [total=-1206.446] core=(-1200.000,-19.000,19.000,-0.693,0.000,-1.386,-4.159,-10.276,0.000,0.000,-10.024,0.000,0.000,0.000,-90.226)  
 Line 2: Decision rule took 0.000 seconds total
-Line 2: Additional reporting took 0.006 seconds total
-Line 2: Translation took 0.018 seconds total
-Name:moses	VmPeak:162472 kB	VmRSS:3928 kB	RSSMax:9052 kB	user:0.043	sys:0.008	CPU:0.051	real:0.048
+Line 2: Additional reporting took 0.008 seconds total
+Line 2: Translation took 0.020 seconds total
+Name:moses	VmPeak:162472 kB	VmRSS:3924 kB	RSSMax:9048 kB	user:0.043	sys:0.016	CPU:0.059	real:0.057
 The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
 Executing: gzip -f run1.best100.out
 Scoring the nbestlist.
@@ -118,8 +118,8 @@ Executing: \cp -f mert.out run1.mert.out
 Executing: \cp -f mert.log run1.mert.log
 Executing: touch mert.log run1.mert.log
 Executing: \cp -f weights.txt run1.weights.txt
-run 1 end at Wed Mar 22 16:51:46 IST 2017
-(1) BEST at 1: 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.108696 -0.217391 0.0434783 0.0434783 0.0434783 0.0434783 0.0434783 => 0.395154 at Wed Mar 22 16:51:46 IST 2017
+run 1 end at Thu Mar 23 16:55:43 IST 2017
+(1) BEST at 1: 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.108696 -0.217391 0.0434783 0.0434783 0.0434783 0.0434783 0.0434783 => 0.395154 at Thu Mar 23 16:55:43 IST 2017
 loading data from 1 to 1 (prev_aggregate_nbl_size=-1)
 loading data from run1.features.dat
 loading data from run1.scores.dat
@@ -138,16 +138,16 @@ featlist: TranslationModel0=0.0434783
 featlist: TranslationModel0=0.0434783 
 featlist: TranslationModel0=0.0434783 
 featlist: TranslationModel0=0.0434783 
-run 2 start at Wed Mar 22 16:51:46 IST 2017
+run 2 start at Thu Mar 23 16:55:43 IST 2017
 Parsing --decoder-flags: ||
 Saving new config to: ./run2.moses.ini
 Saved: ./run2.moses.ini
-DECODER_CFG = -weight-overwrite 'PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 WordPenalty0= -0.217391 Distortion0= 0.065217 LM0= 0.108696'
-Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 WordPenalty0= -0.217391 Distortion0= 0.065217 LM0= 0.108696'  -n-best-list run2.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run2.out 
-Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 WordPenalty0= -0.217391 Distortion0= 0.065217 LM0= 0.108696'  -n-best-list run2.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run2.out
+DECODER_CFG = -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'
+Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'  -n-best-list run2.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run2.out 
+Executing: /home/hgkumbhare/mosesdecoder/bin/moses   -config filtered/moses.ini -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'  -n-best-list run2.best100.out 100 distinct  -input-file /home/hgkumbhare/corpus/se_file_tuning.true.en > run2.out
 1-10.20.2 0.2 0.2 0.20.3 0.3 0.3 0.3 0.3 0.30.30.5(2) run decoder to produce n-best lists
 params = 
-decoder_config = -weight-overwrite 'PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 WordPenalty0= -0.217391 Distortion0= 0.065217 LM0= 0.108696'
+decoder_config = -weight-overwrite 'LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391'
 Defined parameters (per moses.ini or switch):
 	config: filtered/moses.ini 
 	distortion-limit: 6 
@@ -157,7 +157,7 @@ Defined parameters (per moses.ini or switch):
 	mapping: 0 T 0 
 	n-best-list: run2.best100.out 100 distinct 
 	weight: UnknownWordPenalty0= 1 WordPenalty0= -1 PhrasePenalty0= 0.2 TranslationModel0= 0.2 0.2 0.2 0.2 LexicalReordering0= 0.3 0.3 0.3 0.3 0.3 0.3 Distortion0= 0.3 LM0= 0.5 
-	weight-overwrite: PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 WordPenalty0= -0.217391 Distortion0= 0.065217 LM0= 0.108696 
+	weight-overwrite: LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696 Distortion0= 0.065217 WordPenalty0= -0.217391 
 line=UnknownWordPenalty
 FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
 line=WordPenalty
@@ -192,25 +192,25 @@ Line 0: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
 Line 0: Search took 0.005 seconds
 BEST TRANSLATION: It|UNK|UNK|UNK is obligatory|UNK|UNK|UNK that|UNK|UNK|UNK each|UNK|UNK|UNK rental|UNK|UNK|UNK car|UNK|UNK|UNK is owned|UNK|UNK|UNK by|UNK|UNK|UNK exactly|UNK|UNK|UNK one|UNK|UNK|UNK branch|UNK|UNK|UNK [1111111111111]  [total=-1103.979] core=(-1100.000,-13.000,13.000,0.000,0.000,0.000,0.000,-3.219,0.000,0.000,-3.219,0.000,0.000,0.000,-63.943)  
 Line 0: Decision rule took 0.000 seconds total
-Line 0: Additional reporting took 0.002 seconds total
-Line 0: Translation took 0.008 seconds total
+Line 0: Additional reporting took 0.003 seconds total
+Line 0: Translation took 0.009 seconds total
 Translating: It is obligatory that each rental has at most three additional drivers 
 Line 1: Initialize search took 0.000 seconds total
 Line 1: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
-Line 1: Search took 0.007 seconds
+Line 1: Search took 0.005 seconds
 BEST TRANSLATION: It|UNK|UNK|UNK is obligatory|UNK|UNK|UNK that|UNK|UNK|UNK each|UNK|UNK|UNK rental|UNK|UNK|UNK has|UNK|UNK|UNK at most|UNK|UNK|UNK three|UNK|UNK|UNK additional|UNK|UNK|UNK drivers|UNK|UNK|UNK [111111111111]  [total=-1003.767] core=(-1000.000,-12.000,12.000,-0.693,-0.693,-0.693,-0.693,-3.219,0.000,0.000,-3.219,0.000,0.000,0.000,-58.488)  
 Line 1: Decision rule took 0.000 seconds total
-Line 1: Additional reporting took 0.002 seconds total
-Line 1: Translation took 0.010 seconds total
+Line 1: Additional reporting took 0.003 seconds total
+Line 1: Translation took 0.008 seconds total
 Translating: It is obligatory that a car must be assigned to a rental before the pick-up date of the rental 
 Line 2: Initialize search took 0.000 seconds total
 Line 2: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
-Line 2: Search took 0.010 seconds
+Line 2: Search took 0.011 seconds
 BEST TRANSLATION: It|UNK|UNK|UNK is obligatory|UNK|UNK|UNK that|UNK|UNK|UNK a car|UNK|UNK|UNK must|UNK|UNK|UNK be assigned|UNK|UNK|UNK to|UNK|UNK|UNK a rental|UNK|UNK|UNK before|UNK|UNK|UNK point pick-up|UNK|UNK|UNK date|UNK|UNK|UNK than point rental|UNK|UNK|UNK [1111111111111111111]  [total=-1206.446] core=(-1200.000,-19.000,19.000,-0.693,0.000,-1.386,-4.159,-10.276,0.000,0.000,-10.024,0.000,0.000,0.000,-90.226)  
 Line 2: Decision rule took 0.000 seconds total
-Line 2: Additional reporting took 0.006 seconds total
-Line 2: Translation took 0.016 seconds total
-Name:moses	VmPeak:162472 kB	VmRSS:3928 kB	RSSMax:9048 kB	user:0.038	sys:0.015	CPU:0.053	real:0.049
+Line 2: Additional reporting took 0.008 seconds total
+Line 2: Translation took 0.019 seconds total
+Name:moses	VmPeak:162472 kB	VmRSS:3928 kB	RSSMax:9052 kB	user:0.058	sys:0.000	CPU:0.058	real:0.056
 The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
 Executing: gzip -f run2.best100.out
 Scoring the nbestlist.
@@ -225,10 +225,10 @@ Executing: \cp -f mert.out run2.mert.out
 Executing: \cp -f mert.log run2.mert.log
 Executing: touch mert.log run2.mert.log
 Executing: \cp -f weights.txt run2.weights.txt
-run 2 end at Wed Mar 22 16:51:47 IST 2017
+run 2 end at Thu Mar 23 16:55:44 IST 2017
 None of the weights changed more than 1e-05. Stopping.
 Executing: \cp -f init.opt run2.init.opt
-(2) BEST at 2: 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.108696 -0.217391 0.0434783 0.0434783 0.0434783 0.0434783 0.0434783 => 0.395154 at Wed Mar 22 16:51:47 IST 2017
+(2) BEST at 2: 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.108696 -0.217391 0.0434783 0.0434783 0.0434783 0.0434783 0.0434783 => 0.395154 at Thu Mar 23 16:55:44 IST 2017
 Executing: \cp -f mert.log run2.mert.log
 featlist: LexicalReordering0=0.0652174 
 featlist: LexicalReordering0=0.0652174 
@@ -247,4 +247,4 @@ featlist: TranslationModel0=0.0434783
 Parsing --decoder-flags: ||
 Saving new config to: ./moses.ini
 Saved: ./moses.ini
-1-10.20.2 0.2 0.2 0.20.3 0.3 0.3 0.3 0.3 0.30.30.5Training finished at Wed Mar 22 16:51:47 IST 2017
+1-10.20.2 0.2 0.2 0.20.3 0.3 0.3 0.3 0.3 0.30.30.5Training finished at Thu Mar 23 16:55:44 IST 2017

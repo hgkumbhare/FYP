@@ -1,10 +1,31 @@
-Open terminal
-
 Note:
-Make sure all the downloaded files from git are inside folder named "working"
+Make sure all the downloaded files from git are inside folder named "working" in your home 
 
+Open terminal
 Enter the following commands:
 cd 
 mkdir working
 sh script.sh
 sh tuning_script.sh
+
+For output check the output_file in working directory for results.
+For errors check training.out
+
+
+
+
+
+
+For running binarised-model of moses:
+Then make a copy of the ~/working/mert-work/moses.ini in the binarised-model directory
+and change the phrase and reordering tables to point to the binarised versions, as follows:
+1. Change PhraseDictionaryMemory to PhraseDictionaryCompact
+2. Set the path of the PhraseDictionary feature to point to $HOME/working/binarised-model/phrase-table
+3. Set the path of the LexicalReordering feature to point to $HOME/working/binarised-model/reordering-table
+
+Run on terminal:
+~/mosesdecoder/bin/moses -f ~/working/binarised-model/moses.ini
+
+Note: For now we are not using binarized-model
+
+

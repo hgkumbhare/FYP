@@ -1,10 +1,18 @@
 This is a git repo
 
+My notes:
+
 If you are stuck in vim 
 Enter "Ctrl + X"
-
 
 To commit:
 git commit --amend
 
+To pull:
+git pull origin master
 
+To push:
+git push
+
+To store credentials
+http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github

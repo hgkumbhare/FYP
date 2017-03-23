@@ -28,6 +28,4 @@ nohup nice ~/mosesdecoder/scripts/training/train-model.perl -root-dir train -cor
 
 #nohup nice ~/mosesdecoder/scripts/training/train-model.perl -root-dir train -corpus ~/corpus/news-commentary-v8.fr-en.clean --e en -alignment grow-diag-final-and -reordering msd-bidirectional-fe -lm 0:3:$HOME/lm/news-commentary-v8.fr-en.blm.en:8 -external-bin-dir ~/mosesdecoder/tools >& training.out &
 
-~/mosesdecoder/bin/moses -f ~/working/train/model/moses.ini < input_file.txt > output_file.txt
-
 echo "SCRIPT RAN SUCCESSFULLY"

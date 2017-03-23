@@ -5,8 +5,8 @@ Loading reference from /home/hgkumbhare/corpus/nl_file_tuning.true.en
 Data::m_score_type BLEU
 Data::Scorer type from Scorer: BLEU
 loading nbest from run2.best100.out.gz
-Loaded N-best lists : [Wall 0.010962 CPU 0.010938] seconds.
+Loaded N-best lists : [Wall 0.005927 CPU 0.006998] seconds.
 Binary write mode is NOT selected
 saving the array into run2.features.dat
 saving the array into run2.scores.dat
-Stopping... : [Wall 0.014787 CPU 0.014761] seconds.
+Stopping... : [Wall 0.009513 CPU 0.010572] seconds.
