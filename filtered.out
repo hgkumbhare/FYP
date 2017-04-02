@@ -1,0 +1,55 @@
+Defined parameters (per moses.ini or switch):
+	config: /home/hgkumbhare/working/filtered/moses.ini 
+	distortion-limit: 6 
+	feature: UnknownWordPenalty WordPenalty PhrasePenalty PhraseDictionaryCompact name=TranslationModel0 num-features=4 path=/home/hgkumbhare/working/filtered/phrase-table.0-0.1.1 input-factor=0 output-factor=0 LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/working/filtered/reordering-table.wbe-msd-bidirectional-fe.0-0.1 Distortion KENLM name=LM0 factor=0 path=/home/hgkumbhare/lm/nl_file.blm.en order=3 
+	input-factors: 0 
+	mapping: 0 T 0 
+	weight: LexicalReordering0= 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 Distortion0= 0.0652174 LM0= 0.108696 WordPenalty0= -0.217391 PhrasePenalty0= 0.0434783 TranslationModel0= 0.0434783 0.0434783 0.0434783 0.0434783 UnknownWordPenalty0= 1 
+line=UnknownWordPenalty
+FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
+line=WordPenalty
+FeatureFunction: WordPenalty0 start: 1 end: 1
+line=PhrasePenalty
+FeatureFunction: PhrasePenalty0 start: 2 end: 2
+line=PhraseDictionaryCompact name=TranslationModel0 num-features=4 path=/home/hgkumbhare/working/filtered/phrase-table.0-0.1.1 input-factor=0 output-factor=0
+FeatureFunction: TranslationModel0 start: 3 end: 6
+line=LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/working/filtered/reordering-table.wbe-msd-bidirectional-fe.0-0.1
+Initializing Lexical Reordering Feature..
+FeatureFunction: LexicalReordering0 start: 7 end: 12
+line=Distortion
+FeatureFunction: Distortion0 start: 13 end: 13
+line=KENLM name=LM0 factor=0 path=/home/hgkumbhare/lm/nl_file.blm.en order=3
+FeatureFunction: LM0 start: 14 end: 14
+Loading UnknownWordPenalty0
+Loading WordPenalty0
+Loading PhrasePenalty0
+Loading LexicalReordering0
+Loading Distortion0
+Loading LM0
+Loading TranslationModel0
+Created input-output object : [0.001] seconds
+Translating: fresh photographs will be required to be obtained from minor customer on becoming major. 
+Line 0: Initialize search took 0.000 seconds total
+Line 0: Collecting options took 0.001 seconds at moses/Manager.cpp Line 141
+Line 0: Search took 0.019 seconds
+BEST TRANSLATION: fresh|UNK|UNK|UNK becoming will be fresh be obtained customer on photographs major.|UNK|UNK|UNK [11111111111111]  [total=-204.255] core=(-200.000,-11.000,10.000,-4.341,-9.657,-1.686,0.000,-10.024,0.000,0.000,-11.459,0.000,0.000,0.000,-45.977)  
+Line 0: Decision rule took 0.000 seconds total
+Line 0: Additional reporting took 0.000 seconds total
+Line 0: Translation took 0.021 seconds total
+Translating: such review of risk categorisation of customers should be carried out at a periodicity of not less than once in 6 months. 
+Line 1: Initialize search took 0.001 seconds total
+Line 1: Collecting options took 0.003 seconds at moses/Manager.cpp Line 141
+Line 1: Search took 0.015 seconds
+BEST TRANSLATION: such|UNK|UNK|UNK such categorisation of customers should be carried out at a periodicity of not less than once in 6 months.|UNK|UNK|UNK [1111111111111111111111]  [total=-205.133] core=(-200.000,-20.000,7.000,-2.890,-17.162,-1.792,-11.823,-6.186,0.000,0.000,-6.186,0.000,0.000,0.000,-69.129)  
+Line 1: Decision rule took 0.000 seconds total
+Line 1: Additional reporting took 0.000 seconds total
+Line 1: Translation took 0.019 seconds total
+Translating: the customer should be made aware that if at any point of time, the balances in all his/her accounts with the nbfc exceed 50000 rupees or total credit in the account exceeds 100000 rupees no further transactions will be permitted until the full kyc procedure is completed. 
+Line 2: Initialize search took 0.002 seconds total
+Line 2: Collecting options took 0.007 seconds at moses/Manager.cpp Line 141
+Line 2: Search took 0.142 seconds
+BEST TRANSLATION: the customer should be made aware balances at any the in time,|UNK|UNK|UNK that if his/her|UNK|UNK|UNK no the nbfc|UNK|UNK|UNK full in the account exceeds 100000 is accounts will be permitted rupees until the kyc|UNK|UNK|UNK further completed.|UNK|UNK|UNK [11111111111111111111111111111111111111111111111]  [total=-512.842] core=(-500.000,-35.000,27.000,-15.573,-41.845,-15.521,-4.317,-10.392,-3.219,-5.584,-11.491,-3.219,-5.584,-24.000,-129.948)  
+Line 2: Decision rule took 0.000 seconds total
+Line 2: Additional reporting took 0.000 seconds total
+Line 2: Translation took 0.150 seconds total
+Name:moses	VmPeak:195280 kB	VmRSS:9544 kB	RSSMax:10032 kB	user:0.186	sys:0.016	CPU:0.202	real:0.199

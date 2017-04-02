@@ -5,11 +5,14 @@ Open terminal
 Enter the following commands:
 cd 
 mkdir working
-sh script.sh
-sh tuning_script.sh
+sh training.sh
+sh tuning.sh
+sh binarising.sh    
+sh filtering.sh
+sh tree_scipt.sh
 
 For output check the output_file in working directory for results.
-For errors check training.out
+For errors check training.out and mert.out
 
 
 

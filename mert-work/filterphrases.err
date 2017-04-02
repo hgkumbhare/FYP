@@ -1,12 +1,12 @@
 Executing: mkdir -p /home/hgkumbhare/working/mert-work/filtered
 Stripping XML...
-Executing: /home/hgkumbhare/mosesdecoder/scripts/training/../generic/strip-xml.perl < /home/hgkumbhare/corpus/se_file_tuning.true.en > /home/hgkumbhare/working/mert-work/filtered/input.8428
-pt:PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/hgkumbhare/working/train/model/phrase-table.gz input-factor=0 output-factor=0
+Executing: /home/hgkumbhare/mosesdecoder/scripts/training/../generic/strip-xml.perl < /home/hgkumbhare/corpus/se_file_tuning.true.en > /home/hgkumbhare/working/mert-work/filtered/input.21973
+pt:PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/hgkumbhare/lm/train/model/phrase-table.gz input-factor=0 output-factor=0
 Considering factor 0
-ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/lm/train/model/reordering-table.wbe-msd-bidirectional-fe.gz
 Considering factor 0
 Filtering files...
-filtering /home/hgkumbhare/working/train/model/phrase-table.gz -> /home/hgkumbhare/working/mert-work/filtered/phrase-table.0-0.1.1.gz...
-8 of 416 phrases pairs used (1.92%) - note: max length 10
-filtering /home/hgkumbhare/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz -> /home/hgkumbhare/working/mert-work/filtered/reordering-table.wbe-msd-bidirectional-fe.0-0.1...
-8 of 416 phrases pairs used (1.92%) - note: max length 10
+filtering /home/hgkumbhare/lm/train/model/phrase-table.gz -> /home/hgkumbhare/working/mert-work/filtered/phrase-table.0-0.1.1.gz...
+17 of 357 phrases pairs used (4.76%) - note: max length 10
+filtering /home/hgkumbhare/lm/train/model/reordering-table.wbe-msd-bidirectional-fe.gz -> /home/hgkumbhare/working/mert-work/filtered/reordering-table.wbe-msd-bidirectional-fe.0-0.1...
+17 of 357 phrases pairs used (4.76%) - note: max length 10
