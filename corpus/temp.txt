@@ -1,0 +1,44 @@
+It is obligatory that each operating company has at least one insurer.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+It is obligatory that an estimated rental price of an open rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+If the renter who is responsible for a rental requests a price conversion for the rental then it is obligatory that the rental price of the rental is converted to the currency of the price conversion. 
+If the renter who is responsible for a rental requests a price conversion for the rental then it is obligatory that the rental price of the rental is converted to the currency of the price conversion. 
+It is prohibited that a rental is open if a driver who is authorized for the rental is barred.
+It is prohibited that a rental is open if a driver who is authorized for the rental is barred.
+It is prohibited that a rental is open if a driver who is authorized for the rental is barred.
+It is prohibited that a rental is open if a driver who is authorized for the rental is barred.
+It is prohibited that a rental is open if a driver who is authorized for the rental is barred.
+It is obligatory that the moved car that is included in a car movement is included in the car group that is claimed by the car movement
+It is obligatory that the country that contains the EU-Rent site that is location of the receiving branch of each inward international car movement is the country of registration of the moved car of the car movement.
+At the drop-off date-time of an in-country car movement the local area that manages the receiving branch that is included in the car movement becomes the rental car owner of the moved car that is included in the car movement.
+It is obligatory that the rented car of each assigned rental is stored at the pick-up branch of the rental.
+It is obligatory that the rented car of each assigned rental is stored at the pick-up branch of the rental.
+It is obligatory that the contract number that is included in a request for pick-up references an advance rental that has a pick-up branch that is the branch at which the request for pick-up is made and a scheduled pick-up date-time that is included in the current day.
+At the actual pick-up date-time of a rental it is obligatory that the renter who is responsible for the rental is named on the credit card that is provisionally charged for the estimated rental price of the rental. 
+At the actual pick-up date-time of a rental it is obligatory that each driver who is authorized for the rental has a driver license that is valid for the rental.
+At the actual pick-up date-time of a rental it is obligatory that the fuel level of the rented car of the rental is full 
+At the actual pick-up date-time of a rental it is obligatory that the fuel level of the rented car of the rental is full
+If the actual return date-time of a rental is after the end date-time of the grace period of the rental then it is obligatory that the rental incurs a late return charge.
+If the actual return date-time of a rental is after the end date-time of the grace period of the rental then it is obligatory that the rental incurs a late return charge.
+It is obligatory that a rental incurs a location penalty charge if the drop-off branch of the rental is not the return branch of the rental.
+It is obligatory that a rental incurs a location penalty charge if the drop-off branch of the rental is not the return branch of the rental.
+It is obligatory that a rental incurs a recovery charge if the rental has a recovery location.
+It is obligatory that a rental incurs a recovery charge if the rental has a recovery location.
+It is prohibited that the duration of each rental period is more than 90 rental days.
+It is prohibited that the duration of each rental period is more than 90 rental days.
+It is prohibited that the duration of each rental period is more than 90 rental days.
+If the renter who is responsible for some rental1 is responsible for another rental2 then it is obligatory that the rental period of rental1 does not overlap the rental period of rental2.
+If the renter who is responsible for some rental1 is responsible for another rental2 then it is obligatory that the rental period of rental1 does not overlap the rental period of rental2.
+If a rental car is due for service then it is obligatory that the rental car is scheduled for a scheduled service.
+It is obligatory that the odometer reading of a rental car is not greater than (the service mileage of the rental car + 500 miles).
+If the rented car of an open rental is due for service or is in need of repair then it is obligatory that the rental incurs a car exchange during rental.
+If the rented car of an open rental is due for service or is in need of repair then it is obligatory that the rental incurs a car exchange during rental.
+It is possible that the notification date-time of a bad experience is after the actual return date-time of the rental that includes the bad experience.
+It is permitted that the moved car that is included in a car transfer is in need of service.
+It is permitted that a renter is responsible for more than one advance rental.
+It is permitted that the renter who is responsible for a rental1 is an additional driver who is authorized for another rental2.
+It is permitted that the drop-off branch of a rental is not the return branch of the rental.

@@ -6,6 +6,12 @@
 
 #nl_file_tuning has tuning data
 
+
+#ideally tuning data should be different from training data
+# converting to lowercase
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/nl_file.en > ~/corpus/nl_file_tuning.en
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/se_file.en > ~/corpus/se_file_tuning.en
+
 ~/mosesdecoder/scripts/tokenizer/tokenizer.perl -l en < ~/corpus/nl_file_tuning.en > ~/corpus/nl_file_tuning.tok.en
 
 ~/mosesdecoder/scripts/tokenizer/tokenizer.perl -l en < ~/corpus/se_file_tuning.en > ~/corpus/se_file_tuning.tok.en
@@ -21,13 +27,10 @@
 #how to add this line for speed
 #echo `--decoder-flags="threads 4"`
 
+
+
+
 echo "TUNING SCRIPT RAN SUCCESSFULLY"
-
-#Make input file lowercase
-~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/working/input_file.txt > ~/working/input_file_lowercase.txt
-
-# Running or Testing moses (not needed now because we using binarised form)
-#~/mosesdecoder/bin/moses -f ~/working/mert-work/moses.ini < ~/working/input_file_lowercase.txt > ~/working/output_file_lowercase.txt
 
 
 

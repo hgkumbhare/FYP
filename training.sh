@@ -4,9 +4,19 @@
 # To check errors see training.out
 # variables
 MAX_PHRASE_LENGTH=100
-NGRAM=2
+NGRAM=3
 
 # tokenisation: This means that spaces have to be inserted between (e.g.) words and punctuation
+
+# to remove empty lines
+# sed '/^$/d' se_file.en > temp.txt
+
+
+# Just copying corpus in home folder to home/working
+
+rm -r ~/working/corpus
+cp -r ~/corpus ~/working/corpus
+
 
 ~/mosesdecoder/scripts/tokenizer/tokenizer.perl -l en < ~/corpus/nl_file.en > ~/corpus/nl_file.tok.en
 
@@ -35,7 +45,7 @@ NGRAM=2
 #~/corpus/news-commentary-v8.fr-en.clean 1 80
 
 #Language Model Training
-
+rm -r ~/lm
 mkdir ~/lm
 cd ~/lm
 ~/mosesdecoder/bin/lmplz -o $NGRAM <~/corpus/nl_file.true.en > nl_file.arpa.en

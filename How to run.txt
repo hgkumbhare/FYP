@@ -15,4 +15,26 @@ For output check the output_file in working directory for results.
 For errors check training.out and mert.out
 
 
+Data set
+file:///home/hgkumbhare/Downloads/formal-15-05-11.pdf
+
+find
+Sub part III - EU-Rent Rulebook
+
+things to do
+make alphabets back to proper case
+
+
+removed sentences
+nl
+Fresh photographs will be required to be obtained from minor customer on becoming major.
+Such review of risk categorisation of customers should be carried out at a periodicity of not less than once in 6 months.
+The customer should be made aware that if at any point of time, the balances in all his/her accounts with the NBFC exceed 50000 rupees or total credit in the account exceeds 100000 rupees no further transactions will be permitted until the full KYC procedure is completed.
+
+
+se
+It is obligatory that fresh photograph is obtained from customer if Minor customer becomes major.
+It is obligatory that review of risk categorisation of customers is carried out at a periodicity of at least 1 time in 6 months.
+It is obligatory that the Customer is made aware that if Balance of NFBC Account exceeds exactly 50000 Rupees or if Total Credit of NBFC Account exceeds exactly 100000 Rupees then Further Transactions are permitted only if Full KYC Procedure is completed.
+
 

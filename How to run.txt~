@@ -1,0 +1,27 @@
+Note:
+Make sure all the downloaded files from git are inside folder named "working" in your home 
+
+Open terminal
+Enter the following commands:
+cd 
+mkdir working
+sh training.sh
+sh tuning.sh
+sh binarising.sh    
+sh filtering.sh
+sh tree_scipt.sh
+
+For output check the output_file in working directory for results.
+For errors check training.out and mert.out
+
+
+Data set
+file:///home/hgkumbhare/Downloads/formal-15-05-11.pdf
+
+find
+Sub part III - EU-Rent Rulebook
+
+things to do
+make alphabets back to proper case
+
+
