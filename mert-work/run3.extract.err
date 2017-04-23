@@ -1,0 +1,12 @@
+Binary write mode is NOT selected
+Scorer type: BLEU
+name: case value: true
+Loading reference from /home/hgkumbhare/corpus/nl_file_tuning.true.en
+Data::m_score_type BLEU
+Data::Scorer type from Scorer: BLEU
+loading nbest from run3.best100.out.gz
+Loaded N-best lists : [Wall 0.124237 CPU 0.124073] seconds.
+Binary write mode is NOT selected
+saving the array into run3.features.dat
+saving the array into run3.scores.dat
+Stopping... : [Wall 0.176355 CPU 0.176121] seconds.

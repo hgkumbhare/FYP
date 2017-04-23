@@ -37,12 +37,13 @@ sed -i 's/phrase-table.gz/phrase-table/g' ~/working/binarised-model/moses.ini
 
 sed -i 's/reordering-table.wbe-msd-bidirectional-fe.gz/reordering-table/g' ~/working/binarised-model/moses.ini
 
+# Running moses on input file to do translation
+# tried to delete lm folder and run it.. it failed to find phrase-table, Hence it is using it
+
 #Make input file lowercase
 ~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/working/input_file.txt > ~/working/input_file_lowercase.txt
 
-# Running moses on input file to do translation
-
-~/mosesdecoder/bin/moses -xml-input exclusive -f ~/working/binarised-model/moses.ini < input_file_lowercase.txt > output_file_lowercase_binarised.txt
+~/mosesdecoder/bin/moses -xml-input exclusive -f ~/working/binarised-model/moses.ini < input_file_tag.txt > output_file_lowercase_binarised.txt
 
 
 echo "BINARISED MODEL SUCCESSFULLY"

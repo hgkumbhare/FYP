@@ -5,8 +5,10 @@ Open terminal
 Enter the following commands:
 cd 
 mkdir working
+
 sh training.sh
 sh tuning.sh
+sh tagging.sh
 sh binarising.sh    
 sh filtering.sh
 sh tree_scipt.sh

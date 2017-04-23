@@ -1,7 +1,44 @@
-fresh photographs will be required to be obtained from minor customer on becoming major. 
-such review of risk categorisation of customers should be carried out at a periodicity of not less than once in 6 months. 
-the customer should be made aware that if at any point of time, the balances in all his/her accounts with the nbfc exceed 50000 rupees or total credit in the account exceeds 100000 rupees no further transactions will be permitted until the full kyc procedure is completed. 
-the moved car that is included in a car transfer may be in need of service 
-a renter may be responsible for more than one advance rental 
-must have 
-must be 
+each operating company has at least one insurer 
+be is permitted it a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
+a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
+be is permitted it a rental is open has an estimated rental price of the rental is not provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
+if an estimated rental price of a rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental then be is permitted the rental is open. 
+an estimated rental price of an open rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
+a credit card it is in the name of the renter who is responsible for an open rental is provisionally charged for an estimated rental price of the rental. 
+if the renter who is responsible for a rental requests a price conversion for the rental then the rental price of the rental is converted to the currency of the price conversion. 
+the rental price of a rental is converted to the currency of a price conversion it is requested by the renter who is responsible for the rental. 
+be is permitted it a rental is open only if an driver who is authorized for the rental is not barred. 
+a rental is open only if an driver who is authorized for the rental is not barred 
+no rental is open has a driver who is authorized for the rental is barred. 
+be is permitted it a rental is open only if an driver who is authorized for the rental is not barred. 
+no open rental may authorize a driver who is barred. 
+the moved car it is included in a car movement is included in the car group it is claimed by the car movement. 
+the country it contains the eu-rent site it is location of the receiving branch it is included in an inward international car movement is the country of registration of the moved car it is included in the car movement. 
+at the drop-off date-time of an in-country car movement the local area it manages the receiving branch it is included in the car movement is come the rental car owner of the moved car it is included in the car movement. 
+be is permitted the rented car of an assigned rental is not stored at the pick-up branch of the rental. 
+the rented car of an assigned rental is stored at the pick-up branch of the rental. 
+the contract number it is included in a request for pick-up references an advance rental it have a pick-up branch it is the branch at which the request for pick-up is made and a scheduled pick-up date-time it is included in the current day. 
+at the actual pick-up date-time of a rental the renter who is responsible for the rental is named on the credit card it is provisionally charged for the estimated rental price of the rental. 
+at the actual pick-up date-time of a rental an driver who is authorized for the rental has a driver license it is valid for the rental. 
+at the actual pick-up date-time of a rental the fuel level of the rented car of the rental is full. 
+the fuel level of the rented car of a rental is full at the actual pick-up date-time of the rental. 
+if the actual return date-time of a rental is after the end date-time of the grace period of the rental then the rental incurs a late return charge. 
+a rental it have an actual return date-time it is after the end date-time of the grace period of the rental incurs a late return charge 
+a rental incurs a location penalty charge if the drop-off branch of the rental is not the return branch of the rental. 
+a rental it have a drop-off branch it is not the return branch of the rental incurs a location penalty charge. 
+a rental incurs a recovery charge if the rented car of the rental is recovered from a recovery location to a branch. 
+a rental it have a rented car it is recovered from a recovery location to a branch incurs a recovery charge. 
+the duration of a rental period does not be more than 90 rental days. 
+the duration of a rental period is at most 90 rental days. 
+no rental period has a duration it is more than 90 rental days. 
+if the renter who is responsible for some rental1 is responsible for another rental2 then the rental period of rental1 does not overlaps the rental period of rental2. 
+a renter who is responsible for some rental1 does not be responsible for another rental2 it overlaps the rental period of rental1. 
+a rental car it is due for service is scheduled for a scheduled service 
+the odometer reading of a rental car does not be greater than (the service mileage of the rental car + 500 miles). 
+if the rented car of an open rental is due for service or is in need of repair then the rental receives a car exchange during rental. 
+an open rental it have a rented car it is due for service or is in need of repair receives a car exchange during rental. 
+the notification date-time of a bad experience is after the actual return date-time of the rental it includes the bad experience. 
+the moved car it is included in a car transfer is in need of service 
+a renter is responsible for more than one advance rental 
+a renter who is responsible for a rental1 is an additional driver who is authorized for another rental2 
+the drop-off branch of a rental may not be the return branch of the rental 

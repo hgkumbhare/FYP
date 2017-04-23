@@ -1,92 +1,90 @@
 Using SCRIPTS_ROOTDIR: /home/hgkumbhare/mosesdecoder/scripts
 Using single-thread GIZA
 using gzip 
-(1) preparing corpus @ Sun Apr  2 19:45:01 IST 2017
+(1) preparing corpus @ Sun Apr 23 02:04:37 IST 2017
 Executing: mkdir -p /home/hgkumbhare/working/train/corpus
-(1.0) selecting factors @ Sun Apr  2 19:45:01 IST 2017
-(1.1) running mkcls  @ Sun Apr  2 19:45:01 IST 2017
+(1.0) selecting factors @ Sun Apr 23 02:04:37 IST 2017
+(1.1) running mkcls  @ Sun Apr 23 02:04:37 IST 2017
+/home/hgkumbhare/mosesdecoder/tools/mkcls -c50 -n2 -p/home/hgkumbhare/corpus/nl_file.fr -V/home/hgkumbhare/working/train/corpus/fr.vcb.classes opt
+  /home/hgkumbhare/working/train/corpus/fr.vcb.classes already in place, reusing
+(1.1) running mkcls  @ Sun Apr 23 02:04:37 IST 2017
 /home/hgkumbhare/mosesdecoder/tools/mkcls -c50 -n2 -p/home/hgkumbhare/corpus/nl_file.en -V/home/hgkumbhare/working/train/corpus/en.vcb.classes opt
   /home/hgkumbhare/working/train/corpus/en.vcb.classes already in place, reusing
-(1.1) running mkcls  @ Sun Apr  2 19:45:01 IST 2017
-/home/hgkumbhare/mosesdecoder/tools/mkcls -c50 -n2 -p/home/hgkumbhare/corpus/nl_file.en -V/home/hgkumbhare/working/train/corpus/en.vcb.classes opt
-  /home/hgkumbhare/working/train/corpus/en.vcb.classes already in place, reusing
-(1.2) creating vcb file /home/hgkumbhare/working/train/corpus/en.vcb @ Sun Apr  2 19:45:01 IST 2017
-(1.2) creating vcb file /home/hgkumbhare/working/train/corpus/en.vcb @ Sun Apr  2 19:45:01 IST 2017
-(1.3) numberizing corpus /home/hgkumbhare/working/train/corpus/en-en-int-train.snt @ Sun Apr  2 19:45:01 IST 2017
-  /home/hgkumbhare/working/train/corpus/en-en-int-train.snt already in place, reusing
-(1.3) numberizing corpus /home/hgkumbhare/working/train/corpus/en-en-int-train.snt @ Sun Apr  2 19:45:01 IST 2017
-  /home/hgkumbhare/working/train/corpus/en-en-int-train.snt already in place, reusing
-(2) running giza @ Sun Apr  2 19:45:01 IST 2017
-(2.1a) running snt2cooc en-en @ Sun Apr  2 19:45:01 IST 2017
+(1.2) creating vcb file /home/hgkumbhare/working/train/corpus/fr.vcb @ Sun Apr 23 02:04:37 IST 2017
+(1.2) creating vcb file /home/hgkumbhare/working/train/corpus/en.vcb @ Sun Apr 23 02:04:37 IST 2017
+(1.3) numberizing corpus /home/hgkumbhare/working/train/corpus/fr-en-int-train.snt @ Sun Apr 23 02:04:37 IST 2017
+  /home/hgkumbhare/working/train/corpus/fr-en-int-train.snt already in place, reusing
+(1.3) numberizing corpus /home/hgkumbhare/working/train/corpus/en-fr-int-train.snt @ Sun Apr 23 02:04:37 IST 2017
+  /home/hgkumbhare/working/train/corpus/en-fr-int-train.snt already in place, reusing
+(2) running giza @ Sun Apr 23 02:04:37 IST 2017
+(2.1a) running snt2cooc fr-en @ Sun Apr 23 02:04:37 IST 2017
 
-Executing: mkdir -p /home/hgkumbhare/working/train/giza.en-en
-Executing: /home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-en-int-train.snt > /home/hgkumbhare/working/train/giza.en-en/en-en.cooc
-/home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-en-int-train.snt > /home/hgkumbhare/working/train/giza.en-en/en-en.cooc
+Executing: mkdir -p /home/hgkumbhare/working/train/giza.fr-en
+Executing: /home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/fr.vcb /home/hgkumbhare/working/train/corpus/fr-en-int-train.snt > /home/hgkumbhare/working/train/giza.fr-en/fr-en.cooc
+/home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/fr.vcb /home/hgkumbhare/working/train/corpus/fr-en-int-train.snt > /home/hgkumbhare/working/train/giza.fr-en/fr-en.cooc
 END.
-(2.1b) running giza en-en @ Sun Apr  2 19:45:01 IST 2017
-/home/hgkumbhare/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/hgkumbhare/working/train/giza.en-en/en-en.cooc -c /home/hgkumbhare/working/train/corpus/en-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/hgkumbhare/working/train/giza.en-en/en-en -onlyaldumps 1 -p0 0.999 -s /home/hgkumbhare/working/train/corpus/en.vcb -t /home/hgkumbhare/working/train/corpus/en.vcb
-  /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.gz seems finished, reusing.
-(2.1a) running snt2cooc en-en @ Sun Apr  2 19:45:01 IST 2017
+(2.1b) running giza fr-en @ Sun Apr 23 02:04:37 IST 2017
+/home/hgkumbhare/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/hgkumbhare/working/train/giza.fr-en/fr-en.cooc -c /home/hgkumbhare/working/train/corpus/fr-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/hgkumbhare/working/train/giza.fr-en/fr-en -onlyaldumps 1 -p0 0.999 -s /home/hgkumbhare/working/train/corpus/en.vcb -t /home/hgkumbhare/working/train/corpus/fr.vcb
+  /home/hgkumbhare/working/train/giza.fr-en/fr-en.A3.final.gz seems finished, reusing.
+(2.1a) running snt2cooc en-fr @ Sun Apr 23 02:04:37 IST 2017
 
-Executing: mkdir -p /home/hgkumbhare/working/train/giza.en-en
-Executing: /home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-en-int-train.snt > /home/hgkumbhare/working/train/giza.en-en/en-en.cooc
-/home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-en-int-train.snt > /home/hgkumbhare/working/train/giza.en-en/en-en.cooc
+Executing: mkdir -p /home/hgkumbhare/working/train/giza.en-fr
+Executing: /home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/fr.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-fr-int-train.snt > /home/hgkumbhare/working/train/giza.en-fr/en-fr.cooc
+/home/hgkumbhare/mosesdecoder/tools/snt2cooc.out /home/hgkumbhare/working/train/corpus/fr.vcb /home/hgkumbhare/working/train/corpus/en.vcb /home/hgkumbhare/working/train/corpus/en-fr-int-train.snt > /home/hgkumbhare/working/train/giza.en-fr/en-fr.cooc
 END.
-(2.1b) running giza en-en @ Sun Apr  2 19:45:01 IST 2017
-/home/hgkumbhare/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/hgkumbhare/working/train/giza.en-en/en-en.cooc -c /home/hgkumbhare/working/train/corpus/en-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/hgkumbhare/working/train/giza.en-en/en-en -onlyaldumps 1 -p0 0.999 -s /home/hgkumbhare/working/train/corpus/en.vcb -t /home/hgkumbhare/working/train/corpus/en.vcb
-  /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.gz seems finished, reusing.
-(3) generate word alignment @ Sun Apr  2 19:45:01 IST 2017
+(2.1b) running giza en-fr @ Sun Apr 23 02:04:37 IST 2017
+/home/hgkumbhare/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/hgkumbhare/working/train/giza.en-fr/en-fr.cooc -c /home/hgkumbhare/working/train/corpus/en-fr-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/hgkumbhare/working/train/giza.en-fr/en-fr -onlyaldumps 1 -p0 0.999 -s /home/hgkumbhare/working/train/corpus/fr.vcb -t /home/hgkumbhare/working/train/corpus/en.vcb
+  /home/hgkumbhare/working/train/giza.en-fr/en-fr.A3.final.gz seems finished, reusing.
+(3) generate word alignment @ Sun Apr 23 02:04:37 IST 2017
 Combining forward and inverted alignment from files:
-  /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.{bz2,gz}
-  /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.{bz2,gz}
+  /home/hgkumbhare/working/train/giza.fr-en/fr-en.A3.final.{bz2,gz}
+  /home/hgkumbhare/working/train/giza.en-fr/en-fr.A3.final.{bz2,gz}
 Executing: mkdir -p /home/hgkumbhare/working/train/model
-Executing: /home/hgkumbhare/mosesdecoder/scripts/training/giza2bal.pl -d "gzip -cd /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.gz" -i "gzip -cd /home/hgkumbhare/working/train/giza.en-en/en-en.A3.final.gz" |/home/hgkumbhare/mosesdecoder/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="no" > /home/hgkumbhare/working/train/model/aligned.grow-diag-final
+Executing: /home/hgkumbhare/mosesdecoder/scripts/training/giza2bal.pl -d "gzip -cd /home/hgkumbhare/working/train/giza.en-fr/en-fr.A3.final.gz" -i "gzip -cd /home/hgkumbhare/working/train/giza.fr-en/fr-en.A3.final.gz" |/home/hgkumbhare/mosesdecoder/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="no" > /home/hgkumbhare/working/train/model/aligned.grow-diag-final
 symal: computing grow alignment: diagonal (1) final (1)both-uncovered (0)
-skip=<0> counts=<3>
-(4) generate lexical translation table 0-0 @ Sun Apr  2 19:45:01 IST 2017
-(/home/hgkumbhare/corpus/nl_file.en,/home/hgkumbhare/corpus/nl_file.en,/home/hgkumbhare/working/train/model/lex)
+skip=<0> counts=<44>
+(4) generate lexical translation table 0-0 @ Sun Apr 23 02:04:37 IST 2017
+(/home/hgkumbhare/corpus/nl_file.fr,/home/hgkumbhare/corpus/nl_file.en,/home/hgkumbhare/working/train/model/lex)
   reusing: /home/hgkumbhare/working/train/model/lex.f2e and /home/hgkumbhare/working/train/model/lex.e2f
-(5) extract phrases @ Sun Apr  2 19:45:01 IST 2017
-/home/hgkumbhare/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/extract-rules /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/extract --GlueGrammar /home/hgkumbhare/working/train/model/glue-grammar --MaxSpan 10 --GZOutput 
-Executing: /home/hgkumbhare/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/extract-rules /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/extract --GlueGrammar /home/hgkumbhare/working/train/model/glue-grammar --MaxSpan 10 --GZOutput 
-Started Sun Apr  2 19:45:01 2017
+(5) extract phrases @ Sun Apr 23 02:04:38 IST 2017
+/home/hgkumbhare/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/extract-rules /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/corpus/nl_file.fr /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/extract --GlueGrammar /home/hgkumbhare/working/train/model/glue-grammar --MaxSpan 10 --GZOutput 
+Executing: /home/hgkumbhare/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/extract-rules /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/corpus/nl_file.fr /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/extract --GlueGrammar /home/hgkumbhare/working/train/model/glue-grammar --MaxSpan 10 --GZOutput 
+Started Sun Apr 23 02:04:38 2017
 using gzip 
 isBSDSplit=0 
-Executing: mkdir -p /home/hgkumbhare/working/train/model/tmp.6923; ls -l /home/hgkumbhare/working/train/model/tmp.6923 
-total=3 line-per-split=1 
-split -d -l 1 -a 7 /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/working/train/model/tmp.6923/target.split -d -l 1 -a 7 /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/working/train/model/tmp.6923/source.split -d -l 1 -a 7 /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/tmp.6923/align.merging extract / extract.inv
-gunzip -c /home/hgkumbhare/working/train/model/tmp.6923/extract.0000000.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000001.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000002.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000003.gz  | LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.6923 2>> /dev/stderr | gzip -c > /home/hgkumbhare/working/train/model/extract.sorted.gz 2>> /dev/stderr 
-gunzip -c /home/hgkumbhare/working/train/model/tmp.6923/extract.0000000.inv.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000001.inv.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000002.inv.gz /home/hgkumbhare/working/train/model/tmp.6923/extract.0000003.inv.gz  | LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.6923 2>> /dev/stderr | gzip -c > /home/hgkumbhare/working/train/model/extract.inv.sorted.gz 2>> /dev/stderr 
-gzip: /home/hgkumbhare/working/train/model/tmp.6923/extract.0000003.gz: No such file or directory
-gzip: /home/hgkumbhare/working/train/model/tmp.6923/extract.0000003.inv.gz: No such file or directory
-Merging glue rules: cat /home/hgkumbhare/working/train/model/tmp.6923/glue.* | LC_ALL=C sort | uniq > /home/hgkumbhare/working/train/model/glue-grammar 
-Finished Sun Apr  2 19:45:01 2017
-(6) score phrases @ Sun Apr  2 19:45:01 IST 2017
-(6.1)  creating table half /home/hgkumbhare/working/train/model/rule-table.half.f2e @ Sun Apr  2 19:45:01 IST 2017
+Executing: mkdir -p /home/hgkumbhare/working/train/model/tmp.32585; ls -l /home/hgkumbhare/working/train/model/tmp.32585 
+total=44 line-per-split=12 
+split -d -l 12 -a 7 /home/hgkumbhare/corpus/nl_file.en /home/hgkumbhare/working/train/model/tmp.32585/target.split -d -l 12 -a 7 /home/hgkumbhare/corpus/nl_file.fr /home/hgkumbhare/working/train/model/tmp.32585/source.split -d -l 12 -a 7 /home/hgkumbhare/working/train/model/aligned.grow-diag-final /home/hgkumbhare/working/train/model/tmp.32585/align.merging extract / extract.inv
+gunzip -c /home/hgkumbhare/working/train/model/tmp.32585/extract.0000000.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000001.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000002.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000003.gz  | LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.32585 2>> /dev/stderr | gzip -c > /home/hgkumbhare/working/train/model/extract.sorted.gz 2>> /dev/stderr 
+gunzip -c /home/hgkumbhare/working/train/model/tmp.32585/extract.0000000.inv.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000001.inv.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000002.inv.gz /home/hgkumbhare/working/train/model/tmp.32585/extract.0000003.inv.gz  | LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.32585 2>> /dev/stderr | gzip -c > /home/hgkumbhare/working/train/model/extract.inv.sorted.gz 2>> /dev/stderr 
+Merging glue rules: cat /home/hgkumbhare/working/train/model/tmp.32585/glue.* | LC_ALL=C sort | uniq > /home/hgkumbhare/working/train/model/glue-grammar 
+Finished Sun Apr 23 02:04:39 2017
+(6) score phrases @ Sun Apr 23 02:04:39 IST 2017
+(6.1)  creating table half /home/hgkumbhare/working/train/model/rule-table.half.f2e @ Sun Apr 23 02:04:39 IST 2017
 /home/hgkumbhare/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/extract.sorted.gz /home/hgkumbhare/working/train/model/lex.f2e /home/hgkumbhare/working/train/model/rule-table.half.f2e.gz  --Hierarchical 0 
 Executing: /home/hgkumbhare/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/extract.sorted.gz /home/hgkumbhare/working/train/model/lex.f2e /home/hgkumbhare/working/train/model/rule-table.half.f2e.gz  --Hierarchical 0 
 using gzip 
-Started Sun Apr  2 19:45:01 2017
-/home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/tmp.6970/extract.0.gz /home/hgkumbhare/working/train/model/lex.f2e /home/hgkumbhare/working/train/model/tmp.6970/phrase-table.half.0000000.gz --Hierarchical  2>> /dev/stderr 
-/home/hgkumbhare/working/train/model/tmp.6970/run.0.sh/home/hgkumbhare/working/train/model/tmp.6970/run.1.sh/home/hgkumbhare/working/train/model/tmp.6970/run.2.sh/home/hgkumbhare/working/train/model/tmp.6970/run.3.shmv /home/hgkumbhare/working/train/model/tmp.6970/phrase-table.half.0000000.gz /home/hgkumbhare/working/train/model/rule-table.half.f2e.gzrm -rf /home/hgkumbhare/working/train/model/tmp.6970 
-Finished Sun Apr  2 19:45:01 2017
-(6.3)  creating table half /home/hgkumbhare/working/train/model/rule-table.half.e2f @ Sun Apr  2 19:45:01 IST 2017
+Started Sun Apr 23 02:04:39 2017
+/home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/tmp.32632/extract.0.gz /home/hgkumbhare/working/train/model/lex.f2e /home/hgkumbhare/working/train/model/tmp.32632/phrase-table.half.0000000.gz --Hierarchical  2>> /dev/stderr 
+/home/hgkumbhare/working/train/model/tmp.32632/run.0.sh/home/hgkumbhare/working/train/model/tmp.32632/run.1.sh/home/hgkumbhare/working/train/model/tmp.32632/run.2.sh/home/hgkumbhare/working/train/model/tmp.32632/run.3.shmv /home/hgkumbhare/working/train/model/tmp.32632/phrase-table.half.0000000.gz /home/hgkumbhare/working/train/model/rule-table.half.f2e.gzrm -rf /home/hgkumbhare/working/train/model/tmp.32632 
+Finished Sun Apr 23 02:04:39 2017
+(6.3)  creating table half /home/hgkumbhare/working/train/model/rule-table.half.e2f @ Sun Apr 23 02:04:39 IST 2017
 /home/hgkumbhare/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/extract.inv.sorted.gz /home/hgkumbhare/working/train/model/lex.e2f /home/hgkumbhare/working/train/model/rule-table.half.e2f.gz --Inverse --Hierarchical 1 
 Executing: /home/hgkumbhare/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/extract.inv.sorted.gz /home/hgkumbhare/working/train/model/lex.e2f /home/hgkumbhare/working/train/model/rule-table.half.e2f.gz --Inverse --Hierarchical 1 
 using gzip 
-Started Sun Apr  2 19:45:01 2017
-/home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/tmp.6998/extract.0.gz /home/hgkumbhare/working/train/model/lex.e2f /home/hgkumbhare/working/train/model/tmp.6998/phrase-table.half.0000000.gz --Inverse --Hierarchical  2>> /dev/stderr 
-/home/hgkumbhare/working/train/model/tmp.6998/run.0.sh/home/hgkumbhare/working/train/model/tmp.6998/run.1.sh/home/hgkumbhare/working/train/model/tmp.6998/run.2.sh/home/hgkumbhare/working/train/model/tmp.6998/run.3.shgunzip -c /home/hgkumbhare/working/train/model/tmp.6998/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.6998  | gzip -c > /home/hgkumbhare/working/train/model/rule-table.half.e2f.gz  2>> /dev/stderr rm -rf /home/hgkumbhare/working/train/model/tmp.6998 
-Finished Sun Apr  2 19:45:01 2017
-(6.6) consolidating the two halves @ Sun Apr  2 19:45:01 IST 2017
+Started Sun Apr 23 02:04:39 2017
+/home/hgkumbhare/mosesdecoder/scripts/../bin/score /home/hgkumbhare/working/train/model/tmp.32660/extract.0.gz /home/hgkumbhare/working/train/model/lex.e2f /home/hgkumbhare/working/train/model/tmp.32660/phrase-table.half.0000000.gz --Inverse --Hierarchical  2>> /dev/stderr 
+/home/hgkumbhare/working/train/model/tmp.32660/run.0.sh/home/hgkumbhare/working/train/model/tmp.32660/run.1.sh/home/hgkumbhare/working/train/model/tmp.32660/run.2.sh/home/hgkumbhare/working/train/model/tmp.32660/run.3.shgunzip -c /home/hgkumbhare/working/train/model/tmp.32660/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/hgkumbhare/working/train/model/tmp.32660  | gzip -c > /home/hgkumbhare/working/train/model/rule-table.half.e2f.gz  2>> /dev/stderr rm -rf /home/hgkumbhare/working/train/model/tmp.32660 
+Finished Sun Apr 23 02:04:40 2017
+(6.6) consolidating the two halves @ Sun Apr 23 02:04:40 IST 2017
 Executing: /home/hgkumbhare/mosesdecoder/scripts/../bin/consolidate /home/hgkumbhare/working/train/model/rule-table.half.f2e.gz /home/hgkumbhare/working/train/model/rule-table.half.e2f.gz /dev/stdout --Hierarchical | gzip -c > /home/hgkumbhare/working/train/model/rule-table.gz
 Consolidate v2.0 written by Philipp Koehn
 consolidating direct and indirect rule tables
 processing hierarchical rules
 
 Executing: rm -f /home/hgkumbhare/working/train/model/rule-table.half.*
-(7) learn reordering model @ Sun Apr  2 19:45:01 IST 2017
+(7) learn reordering model @ Sun Apr 23 02:04:40 IST 2017
   ... skipping this step, reordering is not lexicalized ...
-(8) learn generation model @ Sun Apr  2 19:45:01 IST 2017
+(8) learn generation model @ Sun Apr 23 02:04:40 IST 2017
   no generation model requested, skipping step
-(9) create moses.ini @ Sun Apr  2 19:45:01 IST 2017
+(9) create moses.ini @ Sun Apr 23 02:04:40 IST 2017

@@ -1,16 +1,12 @@
-must have|<np translation="has" >must have<np>
-must be|<np translation="is" >must be<np>
+must have|<np translation="has" >must have</np>
+must be|<np translation="is" >must be</np>
 may be|<np translation="is" >may be</np>
 each|<np translation="a" >each</np>
 must become|<np translation="becomes" >must become</np>
 must incur|<np translation="incurs" >must incur</np>
 may have|<np translation="has" >may have</np>
-most not|<np translation="does not" >must not</np>
+must not|<np translation="does not" >must not</np>
 must not be|<np translation="is not" >must not be</np>
 must receive|<np translation="receives" >must receive</np>
-|<np translation="" ></np>
-|<np translation="" ></np>
-|<np translation="" ></np>
-
-|<np translation="" ></np>
+must reference|<np translation="references" >must reference</np>
 

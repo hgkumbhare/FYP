@@ -11,12 +11,15 @@
 ~/mosesdecoder/scripts/training/train-model.perl \
 	-root-dir train \
 	--corpus ~/corpus/nl_file \
-	--external-bin-dir ~/mosesdecoder/tools --f en \
+	--external-bin-dir ~/mosesdecoder/tools --f fr \
 	--e en \
 	--alignment grow-diag-final \
 	--hierarchical \
 	--glue-grammar --lm 0:3:$HOME/lm/nl_file.blm.en:8 \
 	>& logfile 2>&1 
+
+#~/mosesdecoder/scripts/training/train-model.perl -root-dir train -corpus ~/corpus/nl_file.clean --e en --f fr -alignment grow-diag-final-and -reordering msd-bidirectional-fe -lm 0:3:$HOME/lm/nl_file.blm.en:8 -external-bin-dir ~/mosesdecoder/tools >& training.out &
+
 
 # found on link - http://stp.lingfil.uu.se/~aarons/MT-kurs/lab7.html
 
@@ -26,13 +29,13 @@
 #        --glue-grammar -mgiza >logfile 2>&1
 
 
-rm -r tuning
-mkdir tuning
+rm -r ~/working/tuning | echo "cannot delete tuning folder but its okay"
+mkdir ~/working/tuning
 
 
   ~/mosesdecoder/scripts/training/mert-moses.pl \
-  --f en \
-  --e en \
+  ~/corpus/nl_file.en \
+  ~/corpus/nl_file.fr \
   ~/mosesdecoder/bin/moses_chart \
   ~/working/train/model/moses.ini \
   --mertdir ~/mosesdecoder/bin \
@@ -43,12 +46,21 @@ mkdir tuning
   >& ~/working/tuning/mert.log 
 
 
+
+
 #Insert weights into the configuration file.
-perl ~/mosesdecoder/scripts/ems/support/substitute-weights.perl \
-  ~/working/train/model/moses.ini \
-  ~/working/tuning/mert/moses.ini \
-  ~/working/train/model/moses-tuned.ini 
+#perl ~/mosesdecoder/scripts/ems/support/substitute-weights.perl \
+#  ~/working/train/model/moses.ini \
+#  ~/working/tuning/mert/moses.ini \
+#  ~/working/train/model/moses-tuned.ini 
+
+# to comment
+#if false then fi
+# end comment
+
+cp ~/working/tuning/mert/moses.ini ~/working/train/model/moses-tuned.ini
+
+~/mosesdecoder/bin/moses_chart -config ~/working/train/model/moses-tuned.ini -max-chart-span 1000  -inputtype 3 < input_file_lowercase.txt > output_file_tree.txt 2> log_tree.log 
 
 
 
-~/mosesdecoder/bin/moses_chart -config ~/working/train/model/moses-tuned.ini  -inputtype 3 < input_file.txt > output_file_tree.txt 2> log_tree.log 
