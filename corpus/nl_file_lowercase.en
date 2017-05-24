@@ -1,29 +1,29 @@
-each operating company must have at least one insurer
-it is permitted that a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+each operating company must have at least one insurer.
+a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
 a rental may be open only if an estimated rental price of the rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
-it is prohibited that a rental is open if an estimated rental price of the rental is not provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
-if an estimated rental price of a rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental then it is permitted that the rental is open.
+a rental is open if an estimated rental price of the rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
+if an estimated rental price of a rental is provisionally charged to a credit card that is in the name of the renter who is responsible for the rental then the rental is open.
 an estimated rental price of an open rental must be provisionally charged to a credit card that is in the name of the renter who is responsible for the rental.
 a credit card that is in the name of the renter who is responsible for an open rental must be provisionally charged for an estimated rental price of the rental.
 if the renter who is responsible for a rental requests a price conversion for the rental then the rental price of the rental must be converted to the currency of the price conversion.
-the rental price of a rental must be converted to the currency of a price conversion that is requested by the renter who is responsible for the rental. 
-it is permitted that a rental is open only if each driver who is authorized for the rental is not barred.
-a rental may be open only if each driver who is authorized for the rental is not barred
+the rental price of a rental must be converted to the currency of a price conversion that is requested by the renter who is responsible for the rental.
+a rental is open only if each driver who is authorized for the rental is not barred.
+a rental may be open only if each driver who is authorized for the rental is not barred.
 no rental may be open if a driver who is authorized for the rental is barred.
-it is permitted that a rental is open only if each driver who is authorized for the rental is not barred.
+a a rental is open only if each driver who is authorized for the rental is not barred.
 no open rental may authorize a driver who is barred.
 the moved car that is included in a car movement must be included in the car group that is claimed by the car movement.
 the country that contains the eu-rent site that is location of the receiving branch that is included in an inward international car movement must be the country of registration of the moved car that is included in the car movement.
 at the drop-off date-time of an in-country car movement the local area that manages the receiving branch that is included in the car movement must become the rental car owner of the moved car that is included in the car movement.
-it is prohibited that the rented car of an assigned rental is not stored at the pick-up branch of the rental.
+the rented car of an assigned rental is stored at the pick-up branch of the rental.
 the rented car of an assigned rental must be stored at the pick-up branch of the rental.
 the contract number that is included in a request for pick-up must reference an advance rental that has a pick-up branch that is the branch at which the request for pick-up is made and a scheduled pick-up date-time that is included in the current day.
 at the actual pick-up date-time of a rental the renter who is responsible for the rental must be named on the credit card that is provisionally charged for the estimated rental price of the rental.
 at the actual pick-up date-time of a rental each driver who is authorized for the rental must have a driver license that is valid for the rental.
-at the actual pick-up date-time of a rental the fuel level of the rented car of the rental must be full. 
+at the actual pick-up date-time of a rental the fuel level of the rented car of the rental must be full.
 the fuel level of the rented car of a rental must be full at the actual pick-up date-time of the rental.
 if the actual return date-time of a rental is after the end date-time of the grace period of the rental then the rental must incur a late return charge.
-a rental that has an actual return date-time that is after the end date-time of the grace period of the rental must incur a late return charge
+a rental that has an actual return date-time that is after the end date-time of the grace period of the rental must incur a late return charge.
 a rental must incur a location penalty charge if the drop-off branch of the rental is not the return branch of the rental.
 a rental that has a drop-off branch that is not the return branch of the rental must incur a location penalty charge.
 a rental must incur a recovery charge if the rented car of the rental is recovered from a recovery location to a branch.
@@ -33,12 +33,19 @@ the duration of a rental period may be at most 90 rental days.
 no rental period may have a duration that is more than 90 rental days.
 if the renter who is responsible for some rental1 is responsible for another rental2 then the rental period of rental1 must not overlap the rental period of rental2.
 a renter who is responsible for some rental1 must not be responsible for another rental2 that overlaps the rental period of rental1.
-a rental car that is due for service must be scheduled for a scheduled service
+a rental car that is due for service must be scheduled for a scheduled service.
 the odometer reading of a rental car must not be greater than (the service mileage of the rental car + 500 miles).
 if the rented car of an open rental is due for service or is in need of repair then the rental must receive a car exchange during rental.
 an open rental that has a rented car that is due for service or is in need of repair must receive a car exchange during rental.
 the notification date-time of a bad experience may be after the actual return date-time of the rental that includes the bad experience.
-the moved car that is included in a car transfer may be in need of service
-a renter may be responsible for more than one advance rental
-a renter who is responsible for a rental1 may be an additional driver who is authorized for another rental2
-the drop-off branch of a rental may not be the return branch of the rental
+the moved car that is included in a car transfer may be in need of service.
+a renter may be responsible for more than one advance rental.
+a renter who is responsible for a rental1 may be an additional driver who is authorized for another rental2.
+the drop-off branch of a rental may not be the return branch of the rental.
+each driver who is authorized for a rental is qualified.
+the rental price has exactly one rental period.
+the rental price of a rental is calculated in the business currency of the rental.
+at the drop-off date-time of an in-country car movement the local area that manages the receiving branch of the car movement becomes the rental car owner of the moved car that is included in the car movement.
+the drop-off branch of a rental may not be the return branch of the rental.
+the moved car that is included in a car movement must be included in the car group that is claimed by the car movement.
+the country that contains the eu-rent site that is location of the receiving branch of each inward international car movement must be the country of registration of the moved car of the car movement.

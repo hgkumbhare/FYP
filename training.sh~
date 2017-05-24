@@ -4,7 +4,7 @@
 # To check errors see training.out
 # variables
 MAX_PHRASE_LENGTH=100
-NGRAM=2
+NGRAM=4
 
 # tokenisation: This means that spaces have to be inserted between (e.g.) words and punctuation
 

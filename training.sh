@@ -4,7 +4,7 @@
 # To check errors see training.out
 # variables
 MAX_PHRASE_LENGTH=100
-NGRAM=2
+NGRAM=4
 
 # tokenisation: This means that spaces have to be inserted between (e.g.) words and punctuation
 
@@ -50,11 +50,11 @@ cp -r ~/corpus ~/working/corpus
 ~/corpus/nl_file.true fr en \
 ~/corpus/nl_file.clean 1 80
 
-#Language Model Training
+#Language Model Training using fr 
 rm -r ~/lm | echo "Cannot delete lm folder but it is okay"
 mkdir ~/lm
 cd ~/lm
-~/mosesdecoder/bin/lmplz -o $NGRAM <~/corpus/nl_file.true.en > ~/corpus/nl_file.arpa.en
+~/mosesdecoder/bin/lmplz -o $NGRAM <~/corpus/nl_file.true.fr > ~/corpus/nl_file.arpa.en
 
 ~/mosesdecoder/bin/build_binary ~/corpus/nl_file.arpa.en ~/lm/nl_file.blm.en
 

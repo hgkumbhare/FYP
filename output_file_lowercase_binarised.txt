@@ -1,44 +1,51 @@
-each operating company has at least one insurer 
-be is permitted it a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
-a rental is open only if an estimated rental price of the rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
-be is permitted it a rental is open has an estimated rental price of the rental is not provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
-if an estimated rental price of a rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental then be is permitted the rental is open. 
-an estimated rental price of an open rental is provisionally charged to a credit card it is in the name of the renter who is responsible for the rental. 
-a credit card it is in the name of the renter who is responsible for an open rental is provisionally charged for an estimated rental price of the rental. 
-if the renter who is responsible for a rental requests a price conversion for the rental then the rental price of the rental is converted to the currency of the price conversion. 
-the rental price of a rental is converted to the currency of a price conversion it is requested by the renter who is responsible for the rental. 
-be is permitted it a rental is open only if an driver who is authorized for the rental is not barred. 
-a rental is open only if an driver who is authorized for the rental is not barred 
-no rental is open has a driver who is authorized for the rental is barred. 
-be is permitted it a rental is open only if an driver who is authorized for the rental is not barred. 
-no open rental may authorize a driver who is barred. 
-the moved car it is included in a car movement is included in the car group it is claimed by the car movement. 
-the country it contains the eu-rent site it is location of the receiving branch it is included in an inward international car movement is the country of registration of the moved car it is included in the car movement. 
-at the drop-off date-time of an in-country car movement the local area it manages the receiving branch it is included in the car movement is come the rental car owner of the moved car it is included in the car movement. 
-be is permitted the rented car of an assigned rental is not stored at the pick-up branch of the rental. 
-the rented car of an assigned rental is stored at the pick-up branch of the rental. 
-the contract number it is included in a request for pick-up references an advance rental it have a pick-up branch it is the branch at which the request for pick-up is made and a scheduled pick-up date-time it is included in the current day. 
-at the actual pick-up date-time of a rental the renter who is responsible for the rental is named on the credit card it is provisionally charged for the estimated rental price of the rental. 
-at the actual pick-up date-time of a rental an driver who is authorized for the rental has a driver license it is valid for the rental. 
-at the actual pick-up date-time of a rental the fuel level of the rented car of the rental is full. 
-the fuel level of the rented car of a rental is full at the actual pick-up date-time of the rental. 
-if the actual return date-time of a rental is after the end date-time of the grace period of the rental then the rental incurs a late return charge. 
-a rental it have an actual return date-time it is after the end date-time of the grace period of the rental incurs a late return charge 
-a rental incurs a location penalty charge if the drop-off branch of the rental is not the return branch of the rental. 
-a rental it have a drop-off branch it is not the return branch of the rental incurs a location penalty charge. 
-a rental incurs a recovery charge if the rented car of the rental is recovered from a recovery location to a branch. 
-a rental it have a rented car it is recovered from a recovery location to a branch incurs a recovery charge. 
-the duration of a rental period does not be more than 90 rental days. 
-the duration of a rental period is at most 90 rental days. 
-no rental period has a duration it is more than 90 rental days. 
-if the renter who is responsible for some rental1 is responsible for another rental2 then the rental period of rental1 does not overlaps the rental period of rental2. 
-a renter who is responsible for some rental1 does not be responsible for another rental2 it overlaps the rental period of rental1. 
-a rental car it is due for service is scheduled for a scheduled service 
-the odometer reading of a rental car does not be greater than (the service mileage of the rental car + 500 miles). 
-if the rented car of an open rental is due for service or is in need of repair then the rental receives a car exchange during rental. 
-an open rental it have a rented car it is due for service or is in need of repair receives a car exchange during rental. 
-the notification date-time of a bad experience is after the actual return date-time of the rental it includes the bad experience. 
-the moved car it is included in a car transfer is in need of service 
-a renter is responsible for more than one advance rental 
-a renter who is responsible for a rental1 is an additional driver who is authorized for another rental2 
-the drop-off branch of a rental may not be the return branch of the rental 
+a operating company has at least one insurer. 
+a rental rental is open only if only a an that the rented rental estimated rental price of the rental is provisionally charged to a credit card that is included in the rented name that the rented renter who that is responsible for the rented rental. 
+a rental is open only if only a an that the rented rental estimated rental price of the rental is provisionally charged to a credit card that is included in the rented name that the rented renter who that is responsible for the rented rental. 
+a rental is not a rental that the rental is open only if a an that the rented rental estimated rental price of the rental is not provisionally charged to a credit card that is included in the rented name that the rented renter who that is responsible for the rented rental. 
+a an estimated rental price that a rental that is provisionally charged to a credit card that is included in the rented name that the rented renter who that is responsible for the rented car of the rental then the rented car of the rental that is open. 
+an estimated rental price that an open only if the rental is provisionally charged to a credit card that is included in the rented name that the rented renter who that is responsible for the rented rental. 
+No credit card that is included in the rented name that the rented renter who that is responsible for an open only if the rental is provisionally charged for an estimated rental price that the rented rental. 
+a the rented renter who that is responsible for a rental requests a price conversion for the rented car of the rental then the rented car of the rental price that the rented car of the rental is converted to the rented currency that the rented price conversion. 
+the rented car of the rental price that a rental is converted to the rented currency that a price conversion that that is requested by the rented renter who that is responsible for the rented rental. 
+a rental rental is open only if only a a driver who is the rented car of the rental that is not barred. 
+a rental is open only if only a a driver who is the rented car of the rental that is not barred. 
+no the rental is open only if a No driver who is the rented car of the rental that is barred. 
+No a rental rental is open only if only a a driver who is the rented car of the rental that is not barred. 
+no open only if the rental may authorize No driver who that is barred. 
+the rented car of the moved car that that is included in a car movement is included in the rented car group that that is claimed by the rented car movement. 
+the rented country that contains the rented eu-rent site that that is location to that the rented car of the receiving branch that that is included in an inward international car movement is the rented country that registration that the rented car of the moved car that that is included in the rented car movement. 
+at the rented drop-off date-time that an in-country car movement the rented local area that manages the rented receiving branch that that is included in the rented car movement is come the rented car of the rental car owner that the rented car of the moved car that that is included in the rented car movement. 
+a rental is not that rented car that an assigned rental that is not stored at the rented pick-up branch that the rented rental. 
+the rented rented car that an assigned rental is stored at the rented pick-up branch that the rented rental. 
+the rented contract number that that is included in a request for pick-up references an advance rental that has a pick-up branch that is included in the rented branch at which the rented request for pick-up that is made and a scheduled pick-up date-time that that is included in the rented current day. 
+at the rented actual pick-up date-time that a rental the rented renter who that is responsible for the rented car of the rental is named on the rented credit card that that is provisionally charged for the rented estimated rental price that the rented rental. 
+at the rented actual pick-up date-time that a rental a driver who is the rented car of the rental has a driver license that that is valid for the rented rental. 
+at the rented actual pick-up date-time that a rental the rented fuel level that the rented rented car that the rented car of the rental is full. 
+the rented fuel level that the rented rented car that a rental is full at the rented actual pick-up date-time that the rented rental. 
+a the rented actual return date-time that a rental that is after the rented end date-time that the rented grace period that the rented car of the rental then the rented car of the rental incurs a late return charge. 
+a rental that has an actual return date-time that is included after the rented end date-time that the rented grace period that the rented car of the rental incurs a late return charge. 
+a rental incurs a location to penalty charge a the rented drop-off branch that the rented car of the rental rental is not the rented return branch that the rented rental. 
+a rental that has a drop-off branch that is included not the rented return branch that the rented car of the rental incurs a location to penalty charge. 
+a rental incurs a recovery charge a the rented rented car that the rented car of the rental that is recovered from No recovery location to to No branch. 
+a rental that has a rented car that is included recovered from No recovery location to to No branch incurs No recovery charge. 
+the rented duration that a rental period is not be more than 90 rental days. 
+the rented duration that a rental period is at most 90 rental days. 
+no the rental period has No duration that that is more than 90 rental days. 
+a the rented renter who that is responsible for some rental1 that is responsible for another rental2 then the rented car of the rental period that rental1 is not overlap the rented car of the rental period that rental2. 
+a renter who that is responsible for some rental1 is not be responsible for another rental2 that overlaps the rented car of the rental period that rental1. 
+a rental car that that is due for service is scheduled for a scheduled service. 
+the rented odometer reading that a rental car is not greater than (the be service mileage that the rented car of the rental car + 500 miles). 
+a the rented rented car that an open only if the rental that is due for service or is included in need that repair then the rented car of the rental receives No car exchange during rental. 
+an open only if the rental that has a rented car that that is due for service or is included in need that repair receives No car exchange during rental. 
+the rented notification date-time that a bad experience is after the rented actual return date-time that the rented car of the rental that includes the rented bad experience. 
+the rented car of the moved car that that is included in a car transfer is in need that service. 
+a renter is responsible for more than one advance rental. 
+a renter who that is responsible for a rental1 is an additional driver who is for another rental2. 
+the rented drop-off branch that a rental may not be the rented return branch that the rented rental. 
+a driver who is a rental that is qualified. 
+the rented car of the rental price has exactly one rental period. 
+the rented car of the rental price that a rental that is calculated in the rented business currency that the rented rental. 
+at the rented drop-off date-time that an in-country car movement the rented local area that manages the rented receiving branch that the rented car movement becomes the rented car of the rental car owner that the rented car of the moved car that that is included in the rented car movement. 
+the rented drop-off branch that a rental may not be the rented return branch that the rented rental. 
+the rented car of the moved car that that is included in a car movement is included in the rented car group that that is claimed by the rented car movement. 
+the rented country that contains the rented eu-rent site that that is location to that the rented car of the receiving branch that a inward international car movement is the rented country that registration that the rented car of the moved car that the rented car movement. 

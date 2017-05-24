@@ -6,7 +6,7 @@ Data::Scorer type from Scorer: BLEU
 Loading Data from: run1.scores.dat and run1.features.dat
 loading feature data from run1.features.dat
 loading score data from run1.scores.dat
-Data loaded : [Wall 0.027473 CPU 0.027435] seconds.
+Data loaded : [Wall 0.027591 CPU 0.025896] seconds.
 Creating a pool of 1 threads
-Best point: -0.150796 0.145179 0.122084 0.0126515 0.0389417 0.074944 0.0028006 0.0211388 0.0189283 0.119682 0.0742741 0.0854213 0.102729 0.0304303  => 0.493879
-Stopping... : [Wall 0.503949 CPU 0.503625] seconds.
+Best point: 0.030242 0.01417 0.00474838 -0.791119 0.0229351 0.0126204 0.0160308 0.0295526 0.0133585 0.032576 0.0109651 0.00166967 0.0147672 0.00524506  => 0.521695
+Stopping... : [Wall 0.413929 CPU 0.411718] seconds.

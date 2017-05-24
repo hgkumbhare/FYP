@@ -42,3 +42,11 @@ It is permitted that the moved car that is included in a car transfer is in need
 It is permitted that a renter is responsible for more than one advance rental.
 It is permitted that the renter who is responsible for a rental1 is an additional driver who is authorized for another rental2.
 It is permitted that the drop-off branch of a rental is not the return branch of the rental.
+It is obligatory that each driver who is authorized for a rental is qualified.
+It is necessary that the rental price has exactly one rental period.
+It is necessary that the rental price of a rental is calculated in the business currency of the rental.
+It is necessary that at the drop-off date-time of an in-country car movement the local area that manages the receiving branch of the car movement becomes the rental car owner of the moved car that is included in the car movement.
+It is permitted that the drop-off branch of a rental is not the return branch of the rental.
+It is obligatory that the moved car that is included in a car movement is included in the car group that is claimed by the car movement.
+It is obligatory that the country that contains the EU-Rent site that is location of the receiving branch of each inward international car movement is the country of registration of the moved car of the car movement.
+It is obligatory that the country that contains the EU-Rent site that is location of the receiving branch of each inward international car movement is the country of registration of the moved car of the car movement.

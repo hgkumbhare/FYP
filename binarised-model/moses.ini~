@@ -1,8 +1,8 @@
 # MERT optimized configuration
 # decoder /home/hgkumbhare/mosesdecoder/bin/moses
-# BLEU 0.395154 on dev /home/hgkumbhare/corpus/se_file_tuning.true.en
+# BLEU 0.521695 on dev /home/hgkumbhare/corpus/nl_file_tuning.true.fr
 # We were before running iteration 2
-# finished Thu Mar 23 15:42:42 IST 2017
+# finished Sun Apr 30 18:55:39 IST 2017
 ### MOSES CONFIG FILE ###
 #########################
 
@@ -22,18 +22,18 @@
 UnknownWordPenalty
 WordPenalty
 PhrasePenalty
-PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/hgkumbhare/working/train/model/phrase-table.gz input-factor=0 output-factor=0
-LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/working/train/model/reordering-table.wbe-msd-bidirectional-fe.gz
+PhraseDictionaryCompact name=TranslationModel0 num-features=4 path=/home/hgkumbhare/working/binarised-model/phrase-table input-factor=0 output-factor=0
+LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/hgkumbhare/working/binarised-model/reordering-table
 Distortion
 KENLM name=LM0 factor=0 path=/home/hgkumbhare/lm/nl_file.blm.en order=3
 
 # dense weights for feature functions
 [weight]
 
-LexicalReordering0= 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174 0.0652174
-Distortion0= 0.0652174
-LM0= 0.108696
-WordPenalty0= -0.217391
-PhrasePenalty0= 0.0434783
-TranslationModel0= 0.0434783 0.0434783 0.0434783 0.0434783
+LexicalReordering0= 0.030242 0.01417 0.00474838 -0.791119 0.0229351 0.0126204
+Distortion0= 0.0160308
+LM0= 0.0295526
+WordPenalty0= 1
+PhrasePenalty0= 0.032576
+TranslationModel0= 0.0109651 0.00166967 0.0147672 0.00524506
 UnknownWordPenalty0= 1

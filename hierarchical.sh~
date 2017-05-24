@@ -1,0 +1,109 @@
+#!/bin/sh
+
+#link : http://lotus.kuee.kyoto-u.ac.jp/WAT/baseline/baselineSystemHier.html
+
+rm -rf work.fr-en
+
+#Make input file lowercase
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/nl_file.en > ~/corpus/nl_file_lowercase.en
+
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/nl_file.fr > ~/corpus/nl_file_lowercase.fr
+
+LANG_F=fr
+LANG_E=en 
+CORPUS=~/corpus/train-clean 
+DEV_F=~/corpus/nl_file_lowercase.${LANG_F} 
+DEV_E=~/corpus/nl_file_lowercase.${LANG_E} 
+
+LM_ORDER=3
+JOBS=16
+
+MOSES_SCRIPT=~/mosesdecoder/scripts
+MOSES_BIN_DIR=~/mosesdecoder/bin
+EXT_BIN_DIR=~/mosesdecoder/tools
+
+WORK_DIR=work.${LANG_F}-${LANG_E} 
+TRAINING_DIR=${WORK_DIR}/training 
+MODEL_DIR=${WORK_DIR}/training/model 
+
+
+mkdir -p ${TRAINING_DIR}/lm
+
+
+# Training
+
+LM_FILE=~/working/${TRAINING_DIR}/lm/lm.${LANG_E}.arpa.gz 
+
+${MOSES_BIN_DIR}/lmplz --order ${LM_ORDER} -S 80% -T /tmp < ~/corpus/nl_file.${LANG_E} | gzip > ${LM_FILE}
+
+# Trainng Translation Model
+
+${MOSES_SCRIPT}/training/train-model.perl \
+  --root-dir ~/working/work.fr-en/training \
+  --model-dir ~/working/work.fr-en/training/model  \
+  --external-bin-dir ~/mosesdecoder/tools \
+  --corpus ~/corpus/nl_file_lowercase \
+  --f ${LANG_F} \
+  --e ${LANG_E} \
+  --parallel \
+  --alignment grow-diag-final-and \
+  --score-options "--GoodTuring" \
+  --hierarchical \
+  --glue-grammar \
+  --lm 0:${LM_ORDER}:$HOME/lm/nl_file.blm.en:8 \
+  --cores ${JOBS} \
+  --sort-buffer-size 10G \
+  --parallel \
+  >& `pwd`/${TRAINING_DIR}/training_TM.log
+
+echo "Training done"
+
+
+# filtering
+
+${MOSES_SCRIPT}/training/filter-model-given-input.pl \
+  ${MODEL_DIR}.filtered/dev \
+  ${MODEL_DIR}/moses.ini \
+  ${DEV_F} \
+  --Hierarchical 
+
+#tuning
+
+mkdir -p ${WORK_DIR}/tuning
+
+${MOSES_SCRIPT}/training/mert-moses.pl \
+  ${DEV_F} \
+  ${DEV_E} \
+  ${MOSES_BIN_DIR}/moses_chart \
+  `pwd`/${MODEL_DIR}.filtered/dev/moses.ini \
+  --mertdir ${MOSES_BIN_DIR} \
+  --working-dir `pwd`/${WORK_DIR}/tuning/mert \
+  --threads ${JOBS} \
+  --no-filter-phrase-table \
+  --decoder-flags "-threads ${JOBS} -max-chart-span 100" \
+  --predictable-seeds \
+  >& ${WORK_DIR}/tuning/mert.log 
+
+
+#perl ${MOSES_SCRIPT}/ems/support/substitute-weights.perl \
+ # ${MODEL_DIR}/moses.ini \
+ # ${WORK_DIR}/tuning/mert/moses.ini \
+ # ${MODEL_DIR}/moses-tuned.ini 
+
+#cp ${MODEL_DIR}/moses-tuned.ini ${WORK_DIR}/tuning/mert/moses.ini 
+
+# Translating
+
+OUTPUT_DIR=${WORK_DIR}/output 
+mkdir ${OUTPUT_DIR} 
+
+#${MOSES_SCRIPT}/training/filter-model-given-input.pl \
+ # ${MODEL_DIR}.filtered/test \
+  #${MODEL_DIR}/moses-tuned.ini \
+  #${TEST} \
+  #--Hierarchical 
+
+outfile=${OUTPUT_DIR}/test.out 
+
+#${MOSES_BIN_DIR}/moses_chart -config ${MODEL_DIR}.filtered/test/moses.ini -max-chart-span 1000 -threads ${JOBS} < input_file_hierachical.txt > output_file_hierarchical.txt 2> ${outfile}.log 
+

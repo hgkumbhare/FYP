@@ -8,9 +8,14 @@
 
 # format to be used found on http://lotus.kuee.kyoto-u.ac.jp/WAT/baseline/baselineSystemTree2String.html
 
+#Make input file lowercase
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/nl_file.en > ~/corpus/nl_file_lowercase.en
+
+~/mosesdecoder/scripts/tokenizer/lowercase.perl -l en < ~/corpus/nl_file.fr > ~/corpus/nl_file_lowercase.fr
+
 ~/mosesdecoder/scripts/training/train-model.perl \
 	-root-dir train \
-	--corpus ~/corpus/nl_file \
+	--corpus ~/corpus/nl_file_lowercase \
 	--external-bin-dir ~/mosesdecoder/tools --f fr \
 	--e en \
 	--alignment grow-diag-final \
@@ -34,8 +39,8 @@ mkdir ~/working/tuning
 
 
   ~/mosesdecoder/scripts/training/mert-moses.pl \
-  ~/corpus/nl_file.en \
-  ~/corpus/nl_file.fr \
+  ~/corpus/nl_file_lowercase.en \
+  ~/corpus/nl_file_lowercase.fr \
   ~/mosesdecoder/bin/moses_chart \
   ~/working/train/model/moses.ini \
   --mertdir ~/mosesdecoder/bin \
