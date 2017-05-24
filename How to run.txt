@@ -20,7 +20,9 @@ or
 
 sh tree_scipt.sh
 
-or hierarchical.sh
+or 
+
+sh hierarchical.sh
 
 For input check the "input_file" in working directory
 For output check the output_file in working directory for results.
